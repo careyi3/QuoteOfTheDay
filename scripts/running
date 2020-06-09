@@ -1,0 +1,2 @@
+#!/bin/bash
+systemctl | grep -e QuoteOfTheDay -e nginx | awk '{printf("%s\t%s\n"),$1,$4}'

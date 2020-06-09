@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf out
+dotnet restore
+dotnet publish -c Release -o out -r linux-arm

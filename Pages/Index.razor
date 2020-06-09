@@ -1,0 +1,29 @@
+﻿@page "/"
+@using Data
+@inject QuoteOfTheDayService QuoteOfTheDayService
+
+<div class="container text-center">
+    @if(_quote == null)
+    {
+      <p>Loading...</p>
+    }
+    else
+    {
+      <blockquote style="margin-left:20px;margin-right:20px;margin-top:20px;">
+          @_quote.quote
+          <br/>
+          <br/>
+          - @_quote.author
+      </blockquote>
+    }
+</div>
+
+@code {
+  private Quote _quote;
+
+      protected override async Task OnInitializedAsync()
+      {
+          _quote = await QuoteOfTheDayService.GetQuoteOfTheDayAsync();
+      }
+
+}
