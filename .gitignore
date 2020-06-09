@@ -7,11 +7,6 @@
 *.o
 *.so
 *.cache
-*.min.css
-*.css.map
-*.min.js
-*.min.js.map
-*/wwwroot/css/site.css
 
 # Packages #
 ############
