@@ -6,4 +6,4 @@ Simple [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) app sh
 
 Some scripts are also included for publishing to run on a Raspberry Pi and monitor its status if running behind Nginx on the Pi.
 
-Read the full article out how and why I built this [here](https://iancarey.ie/blog/boredmakesomething)!
+Read the full article about how and why I built this [here](https://iancarey.ie/blog/boredmakesomething)!
